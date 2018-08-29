@@ -1,0 +1,706 @@
+body{
+    
+    background-image: url(images/background1.png);
+}
+/******************************************************index.php********************************************************************************************/
+form {
+    border: 3px solid #f1f1f1;
+  margin-left: 400px;
+    margin-right: 400px;
+}
+   label, h2{
+    color: #f44336;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+     
+}
+
+button {
+    background-color: #4CAF50;
+    margin-left: 50px;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 40%
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: 50%;
+    margin: 8px 0;
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+/*.ccontainer{
+    padding: 16px;
+    margin-left: 400px;
+}*/
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+    color:red;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 150px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+/*-------------------------------------------------------------home.php--------------------------------------------------------------------*/
+.loginout{
+    float:right;
+    color: red;
+}
+img.profile {
+    width: 5%;
+    margin-right: 10px;
+    border-radius: 50%;
+    float: right;
+}
+img.logo {
+    width: 8%;
+    margin-left: 90px;
+/*    margin-right: 10px;*/
+    border-radius: 60%;
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+    margin: 100px;
+    
+    padding: 0;
+   
+    overflow: hidden;
+    background-color: #333;
+}
+h4{
+    color: red;
+}
+footer{
+    background-color: #333;
+    height: 30px;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+h5{
+    color: red;
+    padding-left: 570px;
+}
+li {
+    float: left;
+    /*margin-left: 200px;*/
+    padding-left: 40px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active{
+    background-color: #4CAF50;
+}
+h1{
+    color: purple;
+    margin-left: 450px;
+}
+
+/*------------------------------------------------register.php----------------------------------------*/
+h2{
+    margin-left: 50px;
+}
+.complete {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    font-size: 24px;
+}
+p{
+    color: red;
+}
+a{
+    color:greenyellow;
+}
+img.thankyou {
+    width: 40%;
+    border-radius: 50%;
+}
+.success {
+    background-color: #ddffdd;
+    border-left: 6px solid #4CAF50;
+    margin-left: 200px;
+    margin-right: 280px;
+}
+.page{
+   background-color: lightskyblue;
+    border-left: 6px solid  #ff0000;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+div {
+    margin-bottom: 15px;
+    padding: 4px 12px;
+    padding-left:50px;
+}
+
+img.comment {
+    width: 5%;
+    margin-right: 100px;
+    border-radius: 50%;
+    float: left;
+}
+.fa {
+    font-size: 500px;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.fa:hover {
+  color: darkblue;
+
+}
+.info {
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    margin-left: 200px;
+    margin-right: 280px;
+}
+/*home.php book holiday*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url(images/newcity.jpg);;
+    height: 50%;
+    margin-left: 200px;
+    margin-right: 270px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    color: red;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+
+/* Modal Content */
+.modal-content {
+    
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+/*add friend*/
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+.w3-container .w3-card-4{
+    margin-left: 300px;
+}
+h3{
+    margin-left: 800px;
+    color: red;
+}
+/*or*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: gray;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  /*background-color: #000;*/
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+/**profile.png*/
+
+.profiles{
+    width: 500px;
+    padding-left: 10px;
+    
+}
+figure{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.w3-button {
+    width:150px;
+   
+}
+
+
+
+
+
+
+/*
+.status{
+background-color:#D2F2EE;
+width:440px;
+}
+
+.comment{
+padding:5px; vertical-align:top; margin-top:2px;
+}
+.comment_but{
+text-align:right;
+padding:3px;
+margin-right:16px;
+}
+.comment_but a{
+text-decoration:none;
+color:#6F88DF;
+font-size:10px;
+}
+.comment_but a:hover{
+text-decoration:underline;
+}
+.new_comment_table
+{
+clear:left;
+float:none;
+overflow:hidden;
+padding:5px 0 4px 5px;
+width:380px;
+font-size:11px;
+margin:1px 0 0 25px;
+}
+.new_comment_row
+{
+background-color:#ECEFF5;
+}
+.new_comment_img
+{
+width:50px;
+margin-top:2px;
+vertical-align:top
+}
+.new_comment_text
+{
+width:300px;
+margin-top:2px;
+vertical-align:top;
+}
+#comm_row{
+display:none;
+background-color:#ECEFF5;
+border-bottom:1px solid #E5EAF1;
+width:350px;
+margin:2px 0 0 40px;
+}
+.comm_input{
+overflow:hidden;
+height:29px;
+margin:5px 5px 0 0;
+min-height:29px;
+width:298px;
+border:1px solid #BDC7D8;
+font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+font-size:11px;
+padding:3px;
+}
+.post_but{
+background:#EEEEEE;
+border-color:#999999 #999999 #888888;
+border-style:solid;
+border-width:1px;
+color:#333333;
+cursor:pointer;
+display:inline-block;
+font-size:11px;
+font-weight:bold;
+line-height:normal !important;
+padding:2px 6px;
+text-align:center;
+text-decoration:none;
+vertical-align:middle;
+white-space:nowrap;
+float:right;
+}
+
+
+#content{
+    width: 50%;
+    margin:  20px auto;
+    border: 1px solid #cbcbcb;
+}
+form div{
+    margin-top: 5px;
+}
+form{
+    width: 50%;
+    margin: 20px;
+    margin-left: 180px;
+    
+}
+
+#img_div{
+    widows: 80%;
+    padding: 5px;
+    margin: 15px auto;
+    borders: 1px solid #cbcbcb;
+}
+#img_div:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.list{
+    float: right;
+    margin-right: 400px;
+    
+}*/
+aside{
+    float: left;
+    margin-right: 1000px;
+}
+img.comments {
+    width: 15%;
+    margin-left: 100px;
+    border-radius: 20%;
+    float: left;
+}
+img.home{
+    width: 50%;
+}
+
+
+/*-----------------------------------------events*/
+body{ font-family: sans-serif;}
+.none{ display:none;}
+.dropdown{color: #444444;font-size:17px;}
+#calender_section{ width:695px;}
+#calender_section h2{ background-color:#1ebac6;; color:#444444; font-size:17px; text-align:center; line-height:70px;}
+#calender_section h2 a{ color:#F58220; float:none;}
+#calender_section_top{ width:694px; float:left; margin-top:55px; background-color:#1ebac6; height:35px; line-height:35px;}
+#calender_section_top ul{padding:0; list-style-type:none;}
+#calender_section_top ul li{ float:left; display:block; width:99px; border-right:1px solid #fff;  text-align:center; font-size:14px; min-height:0; background:none; box-shadow:none; margin:0; padding:0;}
+#calender_section_bot{ width:100%; float:left; border-left:1px solid #ccc; border-bottom:1px solid #ccc;}
+#calender_section_bot ul{ margin:0; padding:0; list-style-type:none;}
+#calender_section_bot ul li{ float:left; width:99px; height:80px; text-align:center; border-top:1px solid #ccc; border-right:1px solid #ccc; min-height:0; background:none; box-shadow:none; margin:0; padding:0; position:relative;}
+#calender_section_bot ul li span{ margin-top:7px; float:left; margin-left:7px; text-align:center;}
+
+.grey{ background-color:#DDDDDD !important;}
+.light_sky{ background-color:#B9FFFF !important;}
+.date_cell { cursor: pointer; cursor: hand; }
+.date_cell:hover { background: #DDDDDD !important; }
+.date_popup_wrap {
+	position: absolute;
+	width: 143px;
+	height: 115px;
+	z-index: 9999;
+	top: -115px;
+	left:-55px;
+	background: transparent url(../jscript/images/add-new-event.png) no-repeat top left;
+	color: #666 !important;
+}
+.events_window {
+	overflow: hidden;
+	overflow-y: auto;
+	width: 133px;
+	height: 115px;
+	margin-top: 28px;
+	margin-left: 25px;
+}
+.event_wrap {
+	margin-bottom: 10px; padding-bottom: 10px;
+	border-bottom: solid 1px #E4E4E7;
+	font-size: 12px;
+	padding: 3px;
+}
+.date_window {
+	margin-top:20px;
+	margin-bottom: 2px;
+	padding: 5px;
+	font-size: 16px;
+	margin-left:9px;
+	margin-right:14px
+}
+.popup_event {
+	margin-bottom: 2px;
+	padding: 2px;
+	font-size: 16px;
+	width:100%;
+}
+.popup_event a {color: #000000 !important;}
+.packeg_box a {color: #F58220;float: right;}
+a:hover {color: #181919;text-decoration: underline;}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+#calender_section{ width:336px;}
+#calender_section_top ul li{ width:47px;}
+#calender_section_bot ul li{ width:47px;}
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+#calender_section{ width:219px;}
+#calender_section_top ul li{ width:30px; font-size:11px;}
+#calender_section_bot ul li{ width:30px;}
+#calender_section_bot{ width:217px;}
+#calender_section_bot ul li{ height:50px;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+#calender_section{ width:530px;}
+#calender_section_top ul li{ width:74px;}
+#calender_section_bot ul li{ width:74px;}
+#calender_section_bot{ width:525px;}
+#calender_section_bot ul li{ height:50px;}
+}
+
+.friend{
+    margin-left: 1000px;
+}
+@media only screen and (min-width: 974px)  {
+    /* 5 in a row */
+    #gallery picture {
+        width: 16%;  /* (100-20) / 5 */
+    }
+    #gallery picture:nth-child(5n) {
+        margin-right: 0;
+    }
+}
+@media only screen and (min-width:911px) and (max-width: 974px)  {
+
+    header h1 {
+        font-size: 4em; 
+    }
+    article img {
+        width: 100%;
+    }
+    nav ul li, nav ul li a {
+	display: block;
+	float: left;
+	width: 25%
+    }
+    nav {
+	width: 100%;
+        clear: both;
+    }
+    article {
+	width: 76.92308%;
+    }
+    aside {
+	width: 23.07692%
+    }
+    
+    /* 4 in a row */
+    #gallery picture {
+        width: 21.25%;  /* (100-15) / 4 */
+    }
+    #gallery picture:nth-child(4n) {
+       margin-right: 0;
+    }
+}
+@media only screen and (min-width:641px) and (max-width: 910px)  {
+
+    header h1 {
+        font-size: 2.5em; 
+    }
+    article img {
+        width: 100%;
+    }
+    nav ul li, nav ul li a {
+	display: block;
+	float: left;
+	width: 25%
+    }
+    nav {
+	width: 100%;
+        clear: both;
+    }
+    article {
+	width: 65%;
+    }
+    aside {
+	width: 35%
+    }
+    
+    /* 3 in a row */
+    #gallery picture {
+        width: 30%;  /* (100-10) / 3 */
+    }
+    #gallery picture:nth-child(3n) {
+       margin-right: 0;
+    }
+}
